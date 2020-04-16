@@ -27,3 +27,7 @@ print(salesQ2)
 
 print(salesQ2['China'])
 print(salesQ2[0])
+
+# Although the keys are different, the operation goes through
+# It will just set the two un-matched keys to have 'NaN' as values
+print(salesQ1 + salesQ2)
