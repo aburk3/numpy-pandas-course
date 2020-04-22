@@ -42,3 +42,18 @@ df['new'] = df['W'] + df['Y']
 # print(df.iloc[0:3])
 # print(df.drop('C'))
 # print(df.loc[['A', 'C'], ['W', 'Y']])
+
+"""
+    Conditional Selections in Pandas
+"""
+# print(df[df > 0])
+
+# Grab all rows where X is greater than zero
+# print(df[df['X'] > 0])
+
+"""
+    Multiple conditionals
+"""
+# Where both conditions are True
+value = df[(df['W'] > 0) & (df['Y'] > 1)]
+print(value)
