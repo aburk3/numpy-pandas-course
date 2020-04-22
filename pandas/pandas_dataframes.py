@@ -31,3 +31,14 @@ df['new'] = df['W'] + df['Y']
 
 # Delete a column - not permanent
 # print(df.drop('new', axis=1))
+
+
+# Access index from data-frame
+# print(df.loc['A'])
+# print(df.loc[['A']])
+
+# print(df)
+# print(df.loc[['A', 'E']])
+# print(df.iloc[0:3])
+# print(df.drop('C'))
+# print(df.loc[['A', 'C'], ['W', 'Y']])
