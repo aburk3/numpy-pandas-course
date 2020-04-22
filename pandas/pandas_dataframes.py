@@ -55,5 +55,20 @@ df['new'] = df['W'] + df['Y']
     Multiple conditionals
 """
 # Where both conditions are True
-value = df[(df['W'] > 0) & (df['Y'] > 1)]
+# value = df[(df['W'] > 0) & (df['Y'] > 1)]
+# print(value)
+
+# Resetting an index
+# value = df.reset_index()
+# print(df)
+# print(value)
+
+# Setting a column as an index
+new_ind = ['CA', 'NY', 'WY', 'OR', 'CO']
+df['States'] = new_ind
+print(df)
+value = df.set_index('States')
+# States is not a column, but the name of the index - as indicated by the spacing.
 print(value)
+print(value.columns)
+print(df.describe())
